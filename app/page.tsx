@@ -4,57 +4,57 @@ import Image from 'next/image';
 
 const features = [
   {
-    title: 'Music-Centered Matching',
+    title: 'Music-Centered Discovery',
     description:
-      'MixMatch is designed around music-inspired discovery, where profile presentation, preferences, and interaction flow feel more personal and intentional.',
+      'MixMatch is designed around a music-inspired identity, giving the app a more personal and distinctive feel while making profile exploration more engaging.',
   },
   {
-    title: 'Filtered Match Views',
+    title: 'Filtered Match Categories',
     description:
-      'Users can explore different match categories such as All, Date, and Friend, making the experience feel more organized and tailored.',
+      'Users can switch between different match views such as All, Date, and Friend, creating a more organized and flexible browsing experience.',
   },
   {
-    title: 'Engaging Profile Cards',
+    title: 'Interactive Profile Cards',
     description:
-      'The home experience presents visually rich profile cards with anthem-based identity, compatibility cues, and clean call-to-action controls.',
+      'The main matching screen emphasizes profile presentation through visually rich cards, anthem-based identity, and streamlined actions for user engagement.',
   },
   {
     title: 'Real-Time Messaging',
     description:
-      'Matched users can move into a dedicated chat experience with a modern conversation layout that keeps interaction simple and direct.',
+      'Matched users can move into a dedicated chat interface designed to support direct interaction in a clean, modern conversation layout.',
   },
   {
-    title: 'Profile Management',
+    title: 'Profile and Account Management',
     description:
-      'Users can manage their active profile, preview how they appear, edit details, and personalize their account through settings and anthem choices.',
+      'Users can view, edit, and manage their profile through a centralized account screen that supports personalization and profile refinement.',
   },
   {
-    title: 'Consistent Mobile UI',
+    title: 'Unified Dark Interface',
     description:
-      'The app uses a unified dark theme with purple accents, rounded layouts, and simplified navigation to create a polished mobile experience.',
+      'The application uses a consistent black-and-purple design language with rounded layouts, modern spacing, and cohesive visual styling across screens.',
   },
 ];
 
 const processItems = [
   {
-    title: 'Concept and Direction',
+    title: 'Concept Development',
     text:
-      'MixMatch began as a senior project centered on creating a modern matching experience with a stronger emphasis on identity, interaction, and presentation.',
+      'MixMatch began as a senior project aimed at creating a more immersive and visually cohesive matching experience. The project focused on making interaction feel more intentional while giving the app a stronger identity through music-centered presentation.',
   },
   {
-    title: 'UI and Flow Development',
+    title: 'Interface Design',
     text:
-      'A large part of development focused on refining the mobile interface, navigation flow, profile presentation, likes system, and messaging layout.',
+      'A major part of development centered on refining the app’s user interface, including the matching screen, likes system, messaging experience, and profile management flow. The goal was to create a design that felt polished, modern, and easy to navigate.',
   },
   {
-    title: 'Iteration and Scope Refinement',
+    title: 'Feature Refinement',
     text:
-      'As the project evolved, the team refined the feature set to better match the current build, removing outdated ideas and focusing on what is actively implemented in the app.',
+      'As development progressed, the team refined the scope of the project to better reflect the current implementation. This included focusing on features actively represented in the codebase and improving the clarity of the overall user flow.',
   },
   {
-    title: 'Current State',
+    title: 'Current Build',
     text:
-      'The current version highlights the core matching interface, filtered likes views, user messaging, and account/profile management in a consistent visual system.',
+      'The current version of MixMatch highlights categorized browsing, interactive profile presentation, real-time messaging, and a consistent visual system that ties the full mobile experience together.',
   },
 ];
 
@@ -64,29 +64,56 @@ const stack = [
   'Firebase',
   'TypeScript / JavaScript',
   'GitHub',
-  'Figma / UI Planning',
+  'UI / UX Prototyping',
 ];
 
 const screenshots = [
   {
     src: '/home.jpeg',
     title: 'Home Matching Screen',
-    desc: 'Main discovery view with anthem-based profile card and segmented matching filters.',
+    desc: 'The main discovery view presents users through large profile cards, anthem-based identity, and segmented interaction filters.',
   },
   {
     src: '/likes.jpeg',
     title: 'Likes Screen',
-    desc: 'Grid-based likes interface with All, Date, and Friend filters for organized browsing.',
+    desc: 'The likes interface organizes connections into All, Date, and Friend categories for a cleaner and more flexible browsing experience.',
   },
   {
     src: '/chat.jpeg',
     title: 'Messaging Screen',
-    desc: 'Real-time conversation layout for matched users with a clean dark interface.',
+    desc: 'The messaging interface supports direct user conversation in a dark, focused layout designed for simple and modern communication.',
   },
   {
     src: '/profile.jpeg',
     title: 'Profile Screen',
-    desc: 'Account management page for previewing, editing, and customizing user profile details.',
+    desc: 'The profile page centralizes account management, profile editing, and personalization in a polished and consistent layout.',
+  },
+];
+
+const teamMembers = [
+  {
+    name: 'Rabdeep Singh',
+    role: 'Frontend Development & Website Design',
+    description:
+      'Contributed to the visual direction of the project, interface refinement, and development of the MixMatch website and app presentation.',
+  },
+  {
+    name: 'Dean Husain',
+    role: 'Team Leader and Backend Development',
+    description:
+      '',
+  },
+  {
+    name: 'Keerthi Kapavarapu',
+    role: 'Frontend Development',
+    description:
+      'Contributed to the improvement of the user experience and supported development across core screens and interaction flows.',
+  },
+  {
+    name: 'Jennifer Kwon',
+    role: 'Frontend Development',
+    description:
+      'Assisted with app development, collaborative implementation, and the continued refinement of the MixMatch user experience.',
   },
 ];
 
@@ -95,7 +122,7 @@ export default function Home() {
     <main className="min-h-screen bg-black text-white">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute left-[-10%] top-0 h-[400px] w-[400px] rounded-full bg-purple-700/20 blur-3xl" />
-        <div className="absolute right-[-5%] top-[300px] h-[300px] w-[300px] rounded-full bg-fuchsia-500/10 blur-3xl" />
+        <div className="absolute right-[-5%] top-[280px] h-[320px] w-[320px] rounded-full bg-fuchsia-500/10 blur-3xl" />
         <div className="absolute bottom-0 left-[20%] h-[350px] w-[350px] rounded-full bg-violet-600/10 blur-3xl" />
       </div>
 
@@ -132,55 +159,49 @@ export default function Home() {
       </nav>
 
       <section className="mx-auto max-w-5xl px-6 py-24">
-  <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-purple-300">
-    Music-Inspired Matching Experience
-  </p>
+        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-purple-300">
+          Music-Inspired Matching Experience
+        </p>
 
-  <h2 className="text-6xl font-bold leading-tight">
-    A modern matching app built around
-    <span className="text-purple-400"> interaction, style, and identity.</span>
-  </h2>
+        <h2 className="text-6xl font-bold leading-tight md:text-7xl">
+          A modern matching app built around
+          <span className="text-purple-400"> interaction, style, and identity.</span>
+        </h2>
 
-  <p className="mt-8 text-xl leading-9 text-white/70">
-    MixMatch is a senior project focused on building a visually engaging
-    mobile matching experience. The app emphasizes strong profile
-    presentation, organized interaction flows, music-centered identity,
-    real-time chat, and a dark modern interface designed for a smoother
-    user experience.
-  </p>
+        <p className="mt-8 max-w-4xl text-xl leading-9 text-white/70">
+          MixMatch is a senior project exploring a more immersive matching experience
+          through strong profile presentation, structured interaction flows, real-time
+          messaging, and a unified black-and-purple mobile interface.
+        </p>
 
-  <div className="mt-10 flex flex-wrap gap-4">
-    <a
-      href="#screens"
-      className="rounded-full bg-purple-500 px-6 py-3 font-semibold text-white transition hover:bg-purple-400"
-    >
-      View Screens
-    </a>
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a
+            href="#screens"
+            className="rounded-full bg-purple-500 px-6 py-3 font-semibold text-white transition hover:bg-purple-400"
+          >
+            View Screens
+          </a>
 
-    <a
-      href="#process"
-      className="rounded-full border border-purple-400/40 px-6 py-3 font-semibold text-purple-200 transition hover:bg-white/5"
-    >
-      Development Process
-    </a>
-  </div>
+          <a
+            href="#process"
+            className="rounded-full border border-purple-400/40 px-6 py-3 font-semibold text-purple-200 transition hover:bg-white/5"
+          >
+            Development Process
+          </a>
+        </div>
 
-  <div className="mt-14 grid grid-cols-2 gap-6 max-w-xl">
-    <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-      <p className="text-3xl font-bold text-purple-300">4</p>
-      <p className="mt-1 text-sm text-white/60">
-        Core UI Screens Highlighted
-      </p>
-    </div>
+        <div className="mt-14 grid max-w-xl grid-cols-2 gap-6">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <p className="text-3xl font-bold text-purple-300">4</p>
+            <p className="mt-1 text-sm text-white/60">Featured App Screens</p>
+          </div>
 
-    <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-      <p className="text-3xl font-bold text-purple-300">3</p>
-      <p className="mt-1 text-sm text-white/60">
-        Main Interaction Modes
-      </p>
-    </div>
-  </div>
-</section>
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <p className="text-3xl font-bold text-purple-300">1</p>
+            <p className="mt-1 text-sm text-white/60">Unified Design System</p>
+          </div>
+        </div>
+      </section>
 
       <section id="overview" className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-20">
@@ -191,14 +212,13 @@ export default function Home() {
             <h3 className="text-4xl font-bold">What is MixMatch?</h3>
             <p className="mt-6 text-lg leading-8 text-white/70">
               MixMatch is a mobile senior project that explores how a matching platform can feel
-              more immersive, intentional, and visually cohesive. Rather than relying only on a
-              generic swipe model, the project focuses on presentation, categorized user discovery,
+              more immersive, intentional, and visually cohesive. Instead of relying only on a
+              generic swipe model, the project emphasizes presentation, categorized discovery,
               clean profile layouts, and conversation-oriented interaction.
             </p>
             <p className="mt-6 text-lg leading-8 text-white/70">
-              The website documents the current state of the project by showing the interface,
-              describing the core functionality, and summarizing how the application has evolved
-              through design and implementation.
+              This website serves as a showcase of the project’s current interface, design
+              direction, technical structure, and ongoing development progress.
             </p>
           </div>
         </div>
@@ -233,7 +253,7 @@ export default function Home() {
           <h3 className="text-4xl font-bold">Current interface preview</h3>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-white/70">
             The following screens reflect the current visual direction of MixMatch. The app uses a
-            black and purple theme, rounded layouts, segmented views, and a consistent mobile-first
+            black-and-purple theme, segmented views, rounded layouts, and a consistent mobile-first
             design language across discovery, likes, messaging, and profile management.
           </p>
 
@@ -247,7 +267,7 @@ export default function Home() {
                   <div className="rounded-[30px] border border-white/10 bg-black p-3">
                     <Image
                       src={item.src}
-                      alt={item.title}
+                      alt=""
                       width={340}
                       height={700}
                       className="rounded-[24px]"
@@ -289,11 +309,9 @@ export default function Home() {
           <div className="mt-12 rounded-3xl border border-purple-400/20 bg-gradient-to-r from-purple-900/20 to-fuchsia-900/10 p-8">
             <h4 className="text-2xl font-semibold text-purple-200">Current Focus</h4>
             <p className="mt-4 max-w-4xl leading-8 text-white/70">
-              The current focus of the project is refining the main user experience: improving the
-              presentation of match cards, supporting categorized likes views, strengthening the
-              chat experience, and making the profile section feel more complete and polished. This
-              website mirrors that direction by documenting the active UI rather than outdated
-              project ideas.
+              The current focus of the project is refining the main user experience by improving
+              match card presentation, strengthening categorized likes views, enhancing the chat
+              interface, and making profile management feel more complete and polished.
             </p>
           </div>
         </div>
@@ -306,8 +324,8 @@ export default function Home() {
           </p>
           <h3 className="text-4xl font-bold">Tools used in development</h3>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-white/70">
-            MixMatch is being built as a mobile project with a focus on frontend experience,
-            structured navigation, and modern app development workflows.
+            MixMatch is being developed as a mobile application with a strong focus on frontend
+            presentation, organized navigation, and modern development workflows.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -331,16 +349,18 @@ export default function Home() {
           <h3 className="text-4xl font-bold">Project Contributors</h3>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {['Rabdeep Singh', 'Dean Husain', 'Keerthi Kapavarapu', 'Jennifer Kwon'].map((name) => (
+            {teamMembers.map((member) => (
               <div
-                key={name}
+                key={member.name}
                 className="rounded-3xl border border-white/10 bg-white/5 p-6"
               >
                 <div className="mb-4 h-14 w-14 rounded-full bg-purple-500/20" />
-                <h4 className="text-xl font-semibold text-white">{name}</h4>
-                <p className="mt-2 text-sm leading-6 text-white/55">
-                  Senior project team member contributing to the design, development, and
-                  refinement of the MixMatch app experience.
+                <p className="text-sm font-medium uppercase tracking-[0.2em] text-purple-300">
+                  {member.role}
+                </p>
+                <h4 className="mt-3 text-xl font-semibold text-white">{member.name}</h4>
+                <p className="mt-3 text-sm leading-6 text-white/60">
+                  {member.description}
                 </p>
               </div>
             ))}
